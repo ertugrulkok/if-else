@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funktionen</title>
+</head>
+<body>
+
+
+  
+
+    
+        <form">
+        <input id="age" placeholder="age"> 
+        
+        
+       
+       <input id="show" type="submit" value="click"> 
+       
+       <p id="result">the result</p>
+      
+      </form>
+
+      <script>
+
+           var limimitation = "";
+
+           document.getElementById("show").onclick=function() {
+
+        if (
+            document.getElementById("age").value  >= 0 &&
+            document.getElementById("age").value  <= 16
+           )   
+           
+           { limimitation = "you must stay at home.SORRYYY!!!!";
+              document.getElementById("result").innerHTML = limimitation}
+
+           else if (
+            document.getElementById("age").value  >= 17 &&
+            document.getElementById("age").value  <= 1000
+           )   
+           
+           { limimitation = "you can do whatever you want HURRRRAAAYYY!!!!";
+              document.getElementById("result").innerHTML = limimitation}     
+                              
+           
+            }
+
+         
+
+         
+
+
+      </script>
+      
+    
+</body>
+</html>
